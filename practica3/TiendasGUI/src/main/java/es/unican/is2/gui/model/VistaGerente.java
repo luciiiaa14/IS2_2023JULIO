@@ -1,4 +1,4 @@
-
+package es.unican.is2.gui.model;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
@@ -17,7 +17,7 @@ import javax.swing.border.LineBorder;
 
 import java.awt.Color;
 import javax.swing.JButton;
-
+import es.unican.is2.common.model.*;
 /**
  * Clase que implementa la vista del funcionario dentro de la capa de
  * presentacion de la aplicacion usando Swing

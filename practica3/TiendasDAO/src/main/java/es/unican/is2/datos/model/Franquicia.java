@@ -1,3 +1,5 @@
+package es.unican.is2.datos.model;
+
 
 
 
@@ -15,7 +17,7 @@ import javax.xml.bind.annotation.XmlAccessorOrder;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
-
+import es.unican.is2.common.model.*;
 
 
 
@@ -28,7 +30,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 public class Franquicia  {
 	
 	// Path absoluto al fichero de almacenamiento (reemplazar si cambia)
-	public static String DATA_FILE = "C:\\Temp\\franquicia.xml";
+	public static String DATA_FILE = "C:\\Users\\lucia\\OneDrive\\Escritorio\\IS2_2023JULIO\\ISS2_2023JULIO\\practica3\\franquicia.xml";
 
 	@XmlElement(required = true, name="tienda")
 	private List<Tienda> tiendas;

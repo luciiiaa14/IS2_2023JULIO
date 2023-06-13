@@ -1,8 +1,10 @@
+package es.unican.is2.datos.model;
+
 
 
 import java.io.IOException;
 import java.util.List;
-
+import es.unican.is2.common.model.*;
 /**
  * Clase que implementa la capa DAO de acceso a Tiendas.
  * Utiliza almacenamiento en fichero binario de objetos Java.

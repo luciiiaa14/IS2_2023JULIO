@@ -1,3 +1,5 @@
+package es.unican.is2.common.model;
+
 
 
 import java.io.Serializable;
@@ -65,7 +67,10 @@ public class Tienda implements Serializable {
 	 * @return Total mensual sueldos 
 	 */
 	public double gastoMensualSueldos() {
-	 //TODO
-		return 0;
+			double sueldosMensuales = 0.0;
+			for (int i = 0; i < empleados.size(); i++) {
+				sueldosMensuales += empleados.get(i).sueldo();
+			}
+		return sueldosMensuales;
 	}
 }

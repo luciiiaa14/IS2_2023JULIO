@@ -1,3 +1,5 @@
+package es.unican.is2.common.model;
+
 
 
 import java.time.LocalDate;

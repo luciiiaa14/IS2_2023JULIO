@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<franquicia>
+	<tienda>
+		<nombre>SantanderCentro</nombre>
+		<direccion>Paseo Pereda 3 Santander 39001</direccion>
+		<empleado>
+			<dni>11111111A</dni>
+			<nombre>Pepe</nombre>
+			<categoria>ENCARGADO</categoria>
+			<fechaContrato>2001-10-01</fechaContrato>
+			<baja>true</baja>
+		</empleado>
+		<empleado>
+			<dni>11111111B</dni>
+			<nombre>Juan</nombre>
+			<categoria>DEPENDIENTE</categoria>
+			<fechaContrato>2022-10-01</fechaContrato>
+			<baja>false</baja>
+		</empleado>
+		<empleado>
+			<dni>11111111C</dni>
+			<nombre>Pepe</nombre>
+			<categoria>DEPENDIENTE</categoria>
+			<fechaContrato>2010-10-01</fechaContrato>
+			<baja>false</baja>
+		</empleado>
+	</tienda>
+	
+	<tienda>
+		<nombre>SantanderAlisal</nombre>
+		<direccion>Alisal 5 Santander 39010</direccion>
+		<empleado>
+			<dni>22222222A</dni>
+			<nombre>Ana</nombre>
+			<categoria>ENCARGADO</categoria>
+			<fechaContrato>2010-10-01</fechaContrato>
+			<baja>false</baja>
+		</empleado>
+		<empleado>
+			<dni>22222222B</dni>
+			<nombre>Pedro</nombre>
+			<categoria>DEPENDIENTE</categoria>
+			<fechaContrato>2010-10-01</fechaContrato>
+			<baja>false</baja>
+		</empleado>
+		<empleado>
+			<dni>22222222C</dni>
+			<nombre>Oscar</nombre>
+			<categoria>DEPENDIENTE</categoria>
+			<fechaContrato>2010-10-01</fechaContrato>
+			<baja>false</baja>
+		</empleado>
+	</tienda>
+	
+	<tienda>
+		<nombre>MaliañoCentro</nombre>
+		<direccion>Avda. de Bilbao 1 Maliaño 39021</direccion>
+		<empleado>
+			<dni>33333333A</dni>
+			<nombre>Ana</nombre>
+			<categoria>ENCARGADO</categoria>
+			<fechaContrato>2010-10-01</fechaContrato>
+			<baja>false</baja>
+		</empleado>
+		<empleado>
+			<dni>33333333B</dni>
+			<nombre>Luis</nombre>
+			<categoria>DEPENDIENTE</categoria>
+			<fechaContrato>2010-10-01</fechaContrato>
+			<baja>false</baja>
+		</empleado>
+	</tienda>
+	
+</franquicia>

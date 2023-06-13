@@ -38,7 +38,7 @@
 				</descriptorRefs>
 				<archive>
 					<manifest>
-						<mainClass>es.unican.is2.SM.model.Runner</mainClass>
+						<mainClass>es.unican.is2.main.model.Runner</mainClass>
 					</manifest>
 				</archive>
 			</configuration>	

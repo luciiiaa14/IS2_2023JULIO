@@ -1,3 +1,5 @@
+package es.unican.is2.common.model;
+
 
 
 import javax.xml.bind.annotation.XmlEnum;

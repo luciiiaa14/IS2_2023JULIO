@@ -1,9 +1,11 @@
+package es.unican.is2.datos.model;
+
 
 
 import java.io.IOException;
 import java.util.LinkedList;
 import java.util.List;
-
+import es.unican.is2.common.model.*;
 
 /**
  * Clase que implementa la capa DAO de acceso a Empleados. Utiliza

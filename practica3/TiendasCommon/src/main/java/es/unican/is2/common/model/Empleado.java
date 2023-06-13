@@ -1,3 +1,5 @@
+package es.unican.is2.common.model;
+
 import java.time.LocalDate;
 
 import javax.xml.bind.annotation.XmlAccessOrder;
@@ -31,6 +33,8 @@ public class Empleado {
 	
 	@XmlTransient
 	private final double REDUCCION_BAJA = 0.25;
+	private final double SALARIO_BASE_DEPENDIENTE = 1000;
+	private final double SALARIO_BASE_ENCARGADO = 1200;
 	
 	/**
 	 * Constructor sin parámetros. 
@@ -96,8 +100,35 @@ public class Empleado {
 	 * Retorna el sueldo bruto del empleado
 	 */
 	public double sueldo() {
-		//TODO
-		return 0;
+		double sueldo = 0.0;
+		LocalDate mayorCinco = LocalDate.now().minusYears(5);
+		LocalDate mayorDiez = LocalDate.now().minusYears(10);
+		LocalDate mayorQuince = LocalDate.now().minusYears(15);
+		
+		
+		switch (getCategoria()) {
+			case DEPENDIENTE:
+				sueldo = SALARIO_BASE_DEPENDIENTE;
+				if (isBaja()) {
+					sueldo -= sueldo * REDUCCION_BAJA; 
+				}
+			break;
+			case ENCARGADO: 
+				sueldo = SALARIO_BASE_ENCARGADO;
+				if (isBaja()) {
+					sueldo -= sueldo * REDUCCION_BAJA; 
+				}
+				if (getFechaContrato().isAfter(mayorCinco) && getFechaContrato().isBefore(mayorDiez)) {
+					sueldo += 50;
+				} else if (getFechaContrato().isAfter(mayorDiez) && getFechaContrato().isBefore(mayorQuince)) {
+					sueldo += 100;
+				} else if(getFechaContrato().isAfter(mayorQuince)) {
+					sueldo += 150;
+				}
+				break;
+		}
+			
+		return sueldo;
 	}
 	
 }
